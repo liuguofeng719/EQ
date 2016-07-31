@@ -12,7 +12,7 @@ import me.danwi.eq.interceptor.CacheInterceptor;
 import okhttp3.Interceptor;
 
 /**
- * Created by RunningSnail on 16/7/20.
+ * 继承EQApplication
  */
 public class AppApplication extends EQApplication {
     @Override

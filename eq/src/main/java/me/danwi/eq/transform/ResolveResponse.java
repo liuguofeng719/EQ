@@ -10,7 +10,6 @@ import rx.functions.Func1;
  * 普通的请求结果转换
  */
 public class ResolveResponse<T> implements Observable.Transformer<BaseEntity<T>, T> {
-
     @Override
     public Observable<T> call(Observable<BaseEntity<T>> baseEntityObservable) {
         return baseEntityObservable.flatMap(new Func1<BaseEntity<T>, Observable<T>>() {

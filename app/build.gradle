@@ -85,24 +85,6 @@ android {
         abortOnError false
     }
 
-    //修改生成的最终文件名
-//    applicationVariants.all { variant ->
-//        variant.outputs.each { output ->
-//            def outputFile = output.outputFile
-//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
-//                File outputDirectory = new File(outputFile.parent);
-//                def fileName
-//                if (variant.buildType.name == "release") {
-//                    // 输出apk名称为app_v1.0.0_2015-06-15_playStore.apk
-//                    fileName = "app_v${defaultConfig.versionName}_${packageTime()}_${variant.productFlavors[0].name}.apk"
-//                } else {
-//                    fileName = "app_v${defaultConfig.versionName}_${packageTime()}_beta.apk"
-//                }
-//                output.outputFile = new File(outputDirectory, fileName)
-//            }
-//        }
-//    }
-
     // 删掉没有签名的APK文件，同时在这里也可以配置APK文件的输出路径
     applicationVariants.all { variant ->
         variant.assemble.doLast {

@@ -13,8 +13,10 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by RunningSnail on 16/1/20.
- * 服务生产者
+ * Created with Android Studio.
+ * User: 最帅最帅的RunningSnail
+ * Date: 16/1/20
+ * Time: 下午12:55
  */
 public class ServiceProducers {
 
